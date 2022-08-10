@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 const heroes = require('../heroes.js')
-const { verifySlug } = require('../middleware/slug')
-const { verifyHeroe } = require('../middleware/heroesExist')
-const { verifyPower } = require('../middleware/power')
+const verifySlug = require('../middleware/slug')
+const verifyHeroe = require('../middleware/heroesExist')
+const verifyPower = require('../middleware/power')
 
 
 
