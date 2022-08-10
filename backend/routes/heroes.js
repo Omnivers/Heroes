@@ -33,13 +33,13 @@ app.put('/:slug/power',verifySlug, (req,res)=>{
 
 app.delete('/:slug',verifySlug, (req,res)=>{
     heroes.splice(req.index, 1)
-    res.json(`${req.heroe.slug} effacé correctement`)
+    res.json(`${req.heroe.slug}`)
 })
 
 app.delete('/:slug/power/:power',verifySlug,verifyPower, (req,res)=>{
     
     heroes[req.index].power.splice(req.Powindex, 1)
-    res.json(`Le pouvoir ${req.power} de ${req.heroe.slug} est effacé correctement`)
+    res.json(`${req.power}  ${req.heroe.slug}`)
 })
 
 
