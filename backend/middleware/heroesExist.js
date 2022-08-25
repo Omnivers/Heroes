@@ -12,6 +12,7 @@ const verifyHeroe = (req, res, next) => {
     req.heroe = postHeroe
     next()
   }
+  u
 }
 
 module.exports = {
